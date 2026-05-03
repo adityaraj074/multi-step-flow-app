@@ -5,18 +5,16 @@ const filePath = path.join(__dirname, "../data/progress.json");
 
 const saveProgress = (req, res) => {
   try {
-    // ✅ Ensure folder exists
     const dir = path.dirname(filePath);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
 
-    // ✅ Write file safely
     fs.writeFileSync(filePath, JSON.stringify(req.body, null, 2));
 
     res.json({ success: true });
   } catch (err) {
-    console.error("SAVE ERROR:", err); // 👈 IMPORTANT
+    console.error("SAVE ERROR:", err);
     res.status(500).json({ error: "Failed to save progress" });
   }
 };
