@@ -66,6 +66,35 @@ Final Summary Screen:
 - Axios / Fetch API (backend calls)
 - Node.js / Express (backend)
 
+4. Error Handling
+- API failure handled gracefully
+- Retry button provided for failed requests
+- Fallback to local storage if backend is unreachable
+
+5. Data Persistence Strategy
+-Local storage: AsyncStorage
+-Backend storage: API sync
+Priority:
+-Load from backend
+-Fallback to local storage
+
+6. Key Learnings
+- Managing multi-step form state efficiently
+- Handling conditional UI flows
+- Syncing local and remote data
+- Implementing resume functionality
+- Improving UX with progress indicators
+
+7. Future Improvements
+- Add animations between steps
+- Improve UI with design system (e.g., NativeWind / Paper)
+- Add authentication layer
+- Add analytics tracking
+
+Author:
+Aditya Raj
+
+
 
 
 
