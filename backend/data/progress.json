@@ -1,8 +1,8 @@
 {
-  "age": "50",
-  "goal": "Learning",
-  "preference": "basic",
-  "extra": "",
+  "age": "30",
+  "goal": "Finance",
+  "preference": "advanced",
+  "extra": "Finance ",
   "currentStep": 5,
   "isSubmitted": false
 }

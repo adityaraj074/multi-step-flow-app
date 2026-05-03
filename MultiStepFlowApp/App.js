@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-
+import { StatusBar } from "expo-status-bar";
 import AppNavigator from "./src/navigation/AppNavigator";
 import { FormProvider, FormContext } from "./src/context/FormContext";
 import { getLocal } from "./src/utils/storage";
@@ -57,6 +57,7 @@ const Root = () => {
 const App = () => {
   return (
     <SafeAreaProvider>
+      <StatusBar style="light" backgroundColor="#0C121A" />
       <FormProvider>
         <NavigationContainer>
           <Root />
