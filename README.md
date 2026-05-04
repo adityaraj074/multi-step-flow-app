@@ -91,8 +91,6 @@ Priority:
 - Add authentication layer
 - Add analytics tracking
 
-Author:
-Aditya Raj
 
 
 
